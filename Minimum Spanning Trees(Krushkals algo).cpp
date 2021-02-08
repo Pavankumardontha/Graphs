@@ -116,7 +116,8 @@ int main()
 	 {
 	 	sum=sum+g[i].w;
 	 	merge(g[i].a,g[i].b);//we will merge the 2 nodes and make their parent the same.
-	 	//after this par[g[i].a]=-1 and par[g[i].b]=a.
+	 	/*after this par[g[i].a]=-1 and par[g[i].b]=a.Here in the union function,we should not send k,l since k and l are not only parents of g[i].a and g[i].b but there
+		 are many other nodes to which k and l are parents of.So its not adviceable to take union of the 2 large groups rather than single element.*/
 	 }
 	}
 	cout<<sum<<endl;
