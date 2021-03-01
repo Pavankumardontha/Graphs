@@ -8,7 +8,7 @@ Graph edges = Back-edges + DFS tree edges.
 Backedges are edges in graph which are not present in the DFS tree edges.
 in[v] = discovery time of a node. This is the time at which we explored node V in the DFS 
 tree.
-low[v] = least discovery time of children of v connected via backedges.
+low[v] = min(least discovery time of children of v connected via backedges(already visited children),least low time of children of v connected via DFS tree)
 For our current node,children can be 
 a)parent of our current node(its ofcourse visited in this case.we just continue in this case)
 b)unvisited.(we will explore this child and this edge gets added into the DFS tree)
