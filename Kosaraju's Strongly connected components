@@ -1,0 +1,105 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+//kosaraju strongly connected components 
+vector<int> g[10001]; //graph
+vector<int> rg[10001];//reverse graph
+bool vis[10001]; //visited array 
+stack<int> s;
+int n; //no of nodes
+int m; //no of edges
+void dfs(int v)
+{
+    vis[v]=true;
+    for(int i=0;i<g[v].size();i++)
+    {
+        int child = g[v][i];
+        if(!vis[child])
+        dfs(child);
+    }
+    s.push(v);
+    return;
+}
+
+void rdfs(int v)  //dfs on the reverse graph 
+{
+    vis[v] = true;
+    cout<<v<<" ";
+    for(int i=0;i<rg[v].size();i++)
+    {
+        int child = rg[v][i];
+        if(!vis[child])
+        rdfs(child);
+    }
+}
+
+int main()
+{
+    cin>>n>>m;
+    for(int i=1;i<=n;i++)
+    {
+        vis[i]=false;
+        g[i].clear();
+        rg[i].clear();
+    }
+    int a;
+    int b;
+    for(int i=0;i<m;i++)
+    {
+        cin>>a>>b;
+        g[a].push_back(b);
+        rg[b].push_back(a);
+    }
+    
+    /* 
+    1) we will apply dfs on the input graph and push them in the stack as and when the 
+    dfs call on a particular node is completed.
+    2)we will pop and elements from the stack and apply dfs on the reverse graph 
+    from the top element of the stack.
+    */
+    for(int i=1;i<=n;i++)
+    {
+        if(!vis[i])
+        dfs(i);
+    }
+    
+    for(int i=1;i<=n;i++)
+    vis[i]=false;
+    int cnt = 0; //strongly connected components count 
+    while(!s.empty())
+    {
+        int temp = s.top();
+        s.pop();
+        if(!vis[temp])
+        {
+        //all the nodes in a strongly connected component will be visited by one dfs call 
+            rdfs(temp);
+            cout<<endl;
+            cnt++;
+        }
+    }
+    cout<<"No. of connected components : "<<cnt<<endl;
+    
+}
+
+
+
+/*
+input : 
+11 13
+1 2 
+2 3 
+3 1 
+2 4 
+4 5 
+5 6 
+6 4
+7 6 
+7 8 
+8 9 
+9 10 
+10 7 
+10 11
+
+*/
