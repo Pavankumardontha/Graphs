@@ -115,9 +115,13 @@ int main()
 	 if(k!=l)//if both the node parents are different then we should add the edge into the Minimum spanning tree edge-list
 	 {
 	 	sum=sum+g[i].w;
-	 	merge(g[i].a,g[i].b);//we will merge the 2 nodes and make their parent the same.
-	 	/*after this par[g[i].a]=-1 and par[g[i].b]=a.Here in the union function,we should not send k,l since k and l are not only parents of g[i].a and g[i].b but there
-		 are many other nodes to which k and l are parents of.So its not adviceable to take union of the 2 large groups rather than single element.*/
+	 	merge(k,l); //NOT NOT NOT  merge(g[i].a,g[i].b)
+		/* here its very important to note that we are merging the parents of the nodes and NOT the nodes. Mergeing the parents is different than megering the nodes. 
+		Whenever we merge the parents, we are mergeing 2 large groups which have different parents by making their parents same. If parents of any 2 nodes are same 
+		then it means that we can reach one node via another through some path. If they are not reachable then their parents will be different. Reachable nodes have the 
+		same parents. !! 
+		*/
+	 	
 	 }
 	}
 	cout<<sum<<endl;
@@ -142,4 +146,14 @@ sample input :-
 output
 32
 
+test case - 2 
+4 5
+1 2 7
+1 4 6
+4 2 9
+4 3 8
+2 3 6
+
+output 
+19
 */
