@@ -36,7 +36,7 @@ void dfs(int v,int p)
             */
             dfs(child,v);
             cnt++;
-            if(cnt>2 && p==-1) //condition-1
+            if(cnt>=2 && p==-1) //condition-1
             ap[v]=1;
             if(low[child]>=in[v] && p!=-1) //condition-2
             ap[v]=1;
