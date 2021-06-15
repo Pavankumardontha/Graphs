@@ -1,3 +1,5 @@
+/*Submerging island problem SPOJ */
+
 #include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
@@ -38,7 +40,7 @@ void dfs(int v,int p)
             cnt++;
             if(cnt>=2 && p==-1) //condition-1
             ap[v]=1;
-            if(low[child]>=in[v] && p!=-1) //condition-2
+            if(low[child]>=in[v] && p!=-1) //condition-2(the >= sign is very very important here which is slight change from the bridge condition
             ap[v]=1;
             low[v]=min(low[v],low[child]);
         }
