@@ -9,4 +9,4 @@
 7) Rotten Oranges(Important model) ----------> BFS problem
 8) Swim In Rising Water ---------> Dijshiktra 
 
-Note the difference between the above 2 and understand where DFS is used and where BFS is used... !!!
+Note the difference between the above 2 and understand where DFS is used and where BFS is used. Understand where to use Priority queue(Dijshiktra) and where to use simple queue(BFS) for a problem. This is very very important !!!
