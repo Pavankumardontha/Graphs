@@ -52,8 +52,8 @@ int main()
 	{
 		//same as BFS
 		pair<int,int> temp=pq.top(); //remember that this is not pq.front() as in normal case 
-/*whenever a node is coming then it means that its distance is already assigned.We assign the distances to the nodes from
-source and then only push that node with its distance into the priority queue.*/	
+/*whenever a node is coming then it means that its distance is already assigned.We assign the distances to the nodes from source and then only push that node with its distance 
+into the priority queue.*/	
 		int d=temp.first;
 		int node=temp.second;
 		pq.pop();
