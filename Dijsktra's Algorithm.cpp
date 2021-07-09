@@ -20,6 +20,7 @@ int dis[10001];
 priority_queue<pair<int,int>, vector<pair<int,int> >, greater<pair<int,int> > > pq; //this is min heap implementation.Min heap with respect to the first element in the pair.
 //priority_queue<pair<int,int>> pq; //this is normal max heap implementation
 //the first element in the above pair in the priority queue is the distance and NOT the weight.
+//PAIR----VECTORPAIR----GREATERPAIR--- this is important to remember
 
 
 int main()
