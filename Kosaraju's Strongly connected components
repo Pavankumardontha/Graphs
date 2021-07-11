@@ -20,7 +20,7 @@ void dfs(int v)
         if(!vis[child])
         dfs(child);
     }
-    s.push(v);
+    s.push(v); //NOTE ****** this is very important. We should not insert into the stack before visiting all the children !!!
     return;
 }
 
@@ -103,5 +103,7 @@ input :
 9 10 
 10 7 
 10 11
+
+output : 
 
 */
