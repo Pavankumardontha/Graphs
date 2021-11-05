@@ -23,16 +23,6 @@ int main()
         cin>>a>>b>>w;
         dis[a][b]=w;
     }
-    1 node nunchi every node distance 
-    1{
-        1,2,3,4,5,6,7,8,9 
-        {
-            1,1, ====> 1,2,3,4,5,6,7,8,9,
-            1,2  ====> 1,2,3,4,5,6,7,8,9,
-            dis[1][2] = dis[1][j] + dis[j][2]
-            
-        }
-    }
     for(int k=1;k<=n;k++) //src 
     { 
         for(int i=1;i<=n;i++)  //final 
@@ -54,3 +44,4 @@ int main()
         
     }
 }
+
