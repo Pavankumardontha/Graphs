@@ -38,10 +38,18 @@ void dfs(int v,int p)
             */
             dfs(child,v);
             cnt++;
+            
+            //articulation point condition. Note that we have 2 conditions for articulation points. !!! 
             if(cnt>=2 && p==-1) //condition-1
             ap[v]=1;
             if(low[child]>=in[v] && p!=-1) //condition-2(the >= sign is very very important here which is slight change from the bridge condition
             ap[v]=1;
+            
+            /*bridge condition. We have only one condition for bridge. LOWC>INV
+            if(low[child]>in[v])
+            cout<<v<<"-"<<child<<" ";
+            */
+            //note the difference in the extra cnt variable and also in the if condition where we have greater than or equal to condition. !!!
             low[v]=min(low[v],low[child]);
         }
     }
