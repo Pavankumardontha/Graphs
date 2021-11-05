@@ -11,14 +11,10 @@ has negative weight cycles.Dijkstra algorithms runs into infinite loop in case o
 weight cycle.The time complexity of dijkstras is less than bellmanford.Storing the graph in
 edge list is slightly better in this bellmanford algorithm.Initialise all the distances to 
 INF and source node distance to 0 same as in case of dijkshtras.
-
 We will have N-1 phases.In each Phase,we traverse through whole edge list(x,y) and try to 
 update the dis[y].We continue this process for all the edges in each phase.
-After kth phase,Bellmanford algorithm correctly finds all the shortest paths of nodes whose 
-number of edges are less than or equal to k.So if we have n nodes,each node can have atmost 
-n-1 edges and so we need atleast n-1 phases in the worst case.
-
-This implementation is similar to krushkal's minimum spanning trees algorithm.*/
+After (k+1)th phase,Bellmanford algorithm correctly finds all the shortest paths of nodes whose number of edges(in_degree) are less than or equal to k.So if we have n nodes,
+each node can have atmost n-1 edges and so we need atleast n-1 phases in the worst case.This implementation is similar to krushkal's minimum spanning trees algorithm.*/
 
 struct edge
 {
