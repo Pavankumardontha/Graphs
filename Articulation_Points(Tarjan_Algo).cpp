@@ -26,7 +26,7 @@ void dfs(int v,int p)
     in[v]=timer;
     low[v]=timer;
     timer++;
-    int cnt = 0; //children count
+    int cnt = 0; //unvisited children count of current node
     for(int i=0;i<g[v].size();i++)
     {
         int child = g[v][i];
