@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
-/* A directed graph is strongly connected if there is a path between all pairs of vertices. A strongly connected component (SCC) of a directed graph is a maximal strongly 
-connected subgraph.
+/* A directed graph is strongly connected if there is a path between all pairs of vertices. A strongly connected component (SCC) of a directed graph is 
+a maximal strongly connected subgraph.
 */
 //kosaraju strongly connected components 
 vector<int> g[10001]; //graph
@@ -55,10 +55,8 @@ int main()
     }
     
     /* 
-    1) we will apply dfs on the input graph and push them in the stack as and when the 
-    dfs call on a particular node is completed.
-    2)we will pop and elements from the stack and apply dfs on the reverse graph 
-    from the top element of the stack.
+    1) we will apply dfs on the input graph and push them in the stack as and when all the children of a particular node are visited in the dfs call. 
+    2) we will pop elements from the stack and apply dfs on the reverse graph in the popped order.
     */
     for(int i=1;i<=n;i++)
     {
