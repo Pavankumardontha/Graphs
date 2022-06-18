@@ -1,4 +1,15 @@
 # Graphs
+1) DFS 
+2) Connected components 
+3) Bipartite graph
+4) Diameter of a tree
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 2D Problems 
 1) DFS on 2D grid 
 2) BFS on 2D grid 
