@@ -28,16 +28,17 @@ int main()
         cin>>a>>b>>w;
         dis[a][b]=w;
     }
-    for(int k=1;k<=n;k++) //src 
+    // NOTE :- The order of the loop is very important.Always middle man will be the first loop. !!!!!!!
+    for(int k=1;k<=n;k++) //middle man 
     { 
-        for(int i=1;i<=n;i++)  //final 
+        for(int i=1;i<=n;i++)  // src 
         {
             //our aim is to calculate minimum distance between (k,i)
-            for(int j=1;j<=n;j++) //middle man 
+            for(int j=1;j<=n;j++) // final 
             {
-                if(dis[k][j]!=INT_MAX && dis[j][i]!=INT_MAX) //route present or not  
-                if(dis[k][i] > dis[k][j] + dis[j][i]) //compare the distance 
-                dis[k][i] = dis[k][j] + dis[j][i];   //update 
+                if(dis[i][k]!=INT_MAX && dis[k][j]!=INT_MAX) //route present or not  
+                if(dis[i][j] > dis[i][k] + dis[k][j]) //compare the distance 
+                dis[i][j] = dis[i][k] + dis[k][j];   //update 
             }
         }
     }
@@ -49,4 +50,37 @@ int main()
         
     }
 }
+
+/* 
+Test case :- 
+4 4 
+1 2 8
+2 3 9
+3 4 10
+4 1 11 
+
+solution :- 
+0 8 17 27
+30 0 9 19
+21 29 0 10
+11 19 28 0 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
