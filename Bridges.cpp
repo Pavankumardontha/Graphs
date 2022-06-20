@@ -48,7 +48,7 @@ compare lowtime of child and intime of current node.Finally we update the low ti
 node.*/
             dfs(child,v);
             if(low[child]>in[v])
-            cout<<v<<"-"<<child<<" ";
+            cout<<v<<"----"<<child<<" ";
             low[v] = min(low[v],low[child]); //this is for unvisited child
             
         }
@@ -73,3 +73,20 @@ int main()
     return 0;
     
 }
+
+/* 
+input case :-
+7 7
+1 2
+1 3
+2 3
+3 4
+3 5
+5 6
+5 7
+
+solution :- 
+3---4
+5---6
+5---7
+3---5
