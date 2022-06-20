@@ -92,3 +92,29 @@ int main()
     }
     cout<<endl;
 }
+
+/* 
+input test case :- 
+7 7
+1 2
+1 3
+2 3
+3 4
+3 5
+5 6
+5 7
+
+solution :- 
+3 5 
+*/
+
+
+
+
+
+
+
+
+
+
+
