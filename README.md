@@ -1,16 +1,20 @@
-# Graphs
-1) DFS 
-2) Connected components 
-3) Bipartite graph
-4) Diameter of a tree
+# Standard Algorithms
+1) DFS
+2) BFS
+3) Articulation points and bridges (notice the difference)
+4) Topological Sort
+5) Dijkstra 
+6) Floyd warshall
+7) Bellmanford 
+8) Krushkal minimum spanning tree
+9) Kosaraju strongly connected components
 
+# Problem Set
+1) Connected components 
+2) Bipartite graph
+3) Diameter of a tree
 
-
-
-
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-2D Problems 
+# 2D Problem Set 
 1) DFS on 2D grid 
 2) BFS on 2D grid 
 3) Counting connected rooms cses problem(counting connected components) ----> DFS problem 
