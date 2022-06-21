@@ -10,9 +10,11 @@
 9) Kosaraju strongly connected components
 
 # Problem Set
-1) Connected components 
+1) count connected components 
 2) Bipartite graph
-3) Diameter of a tree
+3) Non-directed graph cycle detection
+4) Directed graph cycle detection
+5) Diameter of a tree
 
 # 2D Problem Set 
 1) DFS on 2D grid 
