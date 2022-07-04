@@ -155,5 +155,5 @@ test case - 2
 2 3 6
 
 output 
-19
+21
 */
