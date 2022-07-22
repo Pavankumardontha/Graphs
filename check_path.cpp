@@ -17,6 +17,7 @@ class Solution {
 public:
     bool validPath(int n, vector<vector<int>>& edges, int source, int destination) 
     {
+        // just do dfs call from source node. If there is path , the destination node also gets visited in this dfs call.
         for(int i=0;i<n;i++)
         {
             vis[i]=false;
