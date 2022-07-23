@@ -1,7 +1,8 @@
 /* Dijsktra's Algorithm: In this algorithm we use priority queue(min heap)
 Insertion in Priority queue O(logn)
-Deletion in Priority queue O(logn)
+Deletion(popping) in Priority queue O(logn)
 Finding min/max in Priority Queue O(1).
+Time complexity :- O(V + E*log(E))
  */
 
 #include<bits/stdc++.h>
