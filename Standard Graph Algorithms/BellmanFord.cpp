@@ -3,18 +3,14 @@
 using namespace std;
 
 /* bellmanford single source shortest path.*/
-/*bellam ford algorithm: this is used for finding SSSP. SSSP means single source shortest 
-path.We will find the length of path from our root node to all other nodes.This is used for 
-weighted directed/undirected graph.Bellmanford algorithm can detect negative weight cycle.
-Dijkstra does not detect negative weight cycle.So we use bellmanford algorithm if the graph 
-has negative weight cycles.Dijkstra algorithms runs into infinite loop in case of negative 
-weight cycle.The time complexity of dijkstras is less than bellmanford.Storing the graph in
-edge list is slightly better in this bellmanford algorithm.Initialise all the distances to 
-INF and source node distance to 0 same as in case of dijkshtras.
-We will have N-1 phases.In each Phase,we traverse through whole edge list(x,y) and try to 
-update the dis[y].We continue this process for all the edges in each phase.
-After (k+1)th phase,Bellmanford algorithm correctly finds all the shortest paths of nodes whose number of edges(in_degree) are less than or equal to k.So if we have n nodes,
-each node can have atmost n-1 edges and so we need atleast n-1 phases in the worst case.This implementation is similar to krushkal's minimum spanning trees algorithm.*/
+/*bellam ford algorithm: this is used for finding SSSP. SSSP means single source shortest path.We will find the length of path from our root node to all 
+other nodes.This is used for weighted directed/undirected graph.Bellmanford algorithm can detect negative weight cycle.Dijkstra does not detect negative 
+weight cycle.So we use bellmanford algorithm if the graph has negative weight cycles.Dijkstra algorithms runs into infinite loop in case of negative 
+weight cycle.The time complexity of dijkstras is less than bellmanford.Storing the graph in edge list is slightly better in this bellmanford algorithm.
+Initialise all the distances to INF and source node distance to 0 same as in case of dijkshtras.We will have N-1 phases.In each Phase,we traverse through
+whole edge list(x,y) and try to update the dis[y].We continue this process for all the edges in each phase.After (k+1)th phase,Bellmanford algorithm 
+correctly finds all the shortest paths of nodes whose number of edges(in_degree) are less than or equal to k.So if we have n nodes,each node can have 
+atmost n-1 edges and so we need atleast n-1 phases in the worst case.This implementation is similar to krushkal's minimum spanning trees algorithm.*/
 
 struct edge
 {
@@ -31,6 +27,7 @@ int main()
     cin>>n>>m;
     for(int i=1;i<=n;i++)
     dis[i]=1e7;
+    // this is very important step. Do not always initialise with INT_MAX because this can create problems !!!!
     
     for(int i=0;i<m;i++)
     {
