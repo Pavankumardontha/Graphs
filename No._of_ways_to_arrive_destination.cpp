@@ -14,7 +14,7 @@ public:
         for(int i=0;i<n;i++)
         {
             g[i].clear();
-            dis[i]=LONG_MAX;
+            dis[i]=LONG_MAX; // this is very very important initialization.
         }
         dis[src]=0;
         long long int ways[n];
@@ -32,6 +32,7 @@ public:
             pq.pop();
             int v = temp.second;
             int d = temp.first;
+            // optimization in dijkstra !!!
             if(d > dis[v])
                 continue;
             for(int i=0;i<g[v].size();i++)
