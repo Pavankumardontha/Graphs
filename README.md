@@ -10,8 +10,11 @@
 9) Kosaraju strongly connected components
 
 # BFS problems 
-1) Get watched videos by your friends
+1) Get watched videos by your friends (leetcode)
 
+# DFS problems 
+1) No. of islands (leetcode)
+2) Flood fill (leetcode)
 
 # Problem Set
 1) count connected components 
