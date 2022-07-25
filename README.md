@@ -16,13 +16,15 @@
 # DFS problems 
 1) No. of islands (leetcode)
 2) Flood fill (leetcode)
+3) Check if path exists between source and destination node
+4) No. of paths between source and destination nodes (+ backtracking)
+5) Shortest/Largest path between source and destion node (+ backtracking)
+6) Count connected components in a graph
+7) Bipartite graph check
 
 # Problem Set
-1) count connected components 
-2) Bipartite graph
-3) Non-directed graph cycle detection
-4) Directed graph cycle detection
-5) Diameter of a tree
+1) Non-directed graph cycle detection
+2) Directed graph cycle detection
 
 # 2D Problem Set 
 1) DFS on 2D grid 
