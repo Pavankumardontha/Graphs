@@ -11,6 +11,7 @@
 
 # BFS problems 
 1) Get watched videos by your friends (leetcode)
+2) Diameter of a Tree 
 
 # DFS problems 
 1) No. of islands (leetcode)
