@@ -9,6 +9,10 @@
 8) Krushkal minimum spanning tree
 9) Kosaraju strongly connected components
 
+#BFS problems 
+1) Get watched videos by your friends
+
+
 # Problem Set
 1) count connected components 
 2) Bipartite graph
