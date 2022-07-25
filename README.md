@@ -9,7 +9,7 @@
 8) Krushkal minimum spanning tree
 9) Kosaraju strongly connected components
 
-#BFS problems 
+# BFS problems 
 1) Get watched videos by your friends
 
 
