@@ -10,8 +10,10 @@
 9) Kosaraju strongly connected components
 
 # BFS problems 
-1) Get watched videos by your friends (leetcode)
-2) Diameter of a Tree 
+1) Diameter of a Tree
+2) Get watched videos by your friends (leetcode)
+3) Word ladder - 1 (leetcode)
+4) Word ladder - 2 (leetcode)
 
 # DFS problems 
 1) No. of islands (leetcode)
