@@ -9,13 +9,13 @@
 8) Krushkal minimum spanning tree
 9) Kosaraju strongly connected components
 
-# BFS problems 
+# BFS 
 1) Diameter of a Tree
 2) Get watched videos by your friends (leetcode)
 3) Word ladder - 1 (leetcode)
 4) Word ladder - 2 (leetcode)
 
-# DFS problems 
+# DFS
 1) No. of islands (leetcode)
 2) Flood fill (leetcode)
 3) Check if path exists between source and destination node
