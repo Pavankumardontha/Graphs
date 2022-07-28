@@ -24,6 +24,9 @@
 6) Count connected components in a graph
 7) Bipartite graph check
 
+# Dijkstra 
+1) No. of ways to arrive destination
+
 # Problem Set
 1) Non-directed graph cycle detection
 2) Directed graph cycle detection
