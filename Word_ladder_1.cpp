@@ -17,14 +17,14 @@ public:
             string s = temp.second;
             int distance = temp.first;
             q.pop();
-            for(char c='a';c<='z';c++)
+            for(int i=0;i<s.length();i++)
             {
-                for(int i=0;i<s.length();i++)
+                string original = s;
+                for(char c='a';c<='z';c++)
                 {
-                    string original = s;
-                    original[i] = c;
+                    original[i]=c;
                     if(original==endWord)
-                        return distance + 1;
+                        return distance+1;
                     if(words.find(original)!=words.end())
                     {
                         words.erase(original);
