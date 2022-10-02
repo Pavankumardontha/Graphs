@@ -16,16 +16,19 @@ queue<int> q;
 void bfs(int v)
 {
     q.push(v);
+    vis[v]=1;
     while(!q.empty())
     {
         int temp = q.front();
         q.pop();
-        vis[temp]=1;
         for(int i=0;i<g[temp].size();i++)
         {
             int child = g[temp][i];
             if(!vis[child])
-            q.push(child);
+            {
+                q.push(child);
+                vis[child]=1;
+            }
         }
     }
 }
