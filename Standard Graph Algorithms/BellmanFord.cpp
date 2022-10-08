@@ -26,7 +26,7 @@ int main()
     int m;
     cin>>n>>m;
     for(int i=1;i<=n;i++)
-    dis[i]=1e7;
+    dis[i]=INT_MAX;
     // this is very important step. Do not always initialise with INT_MAX because this can create problems !!!!
     
     for(int i=0;i<m;i++)
@@ -44,8 +44,11 @@ int main()
         for(int j=0;j<m;j++)
         {
             //this loop can be modified and the modified code is given down.
+            if(dis[g[j].a]!=INT_MAX)
             if(dis[g[j].a]+g[j].w < dis[g[j].b])
             dis[g[j].b] = g[j].w + dis[g[j].a];
+            
+            if(dis[g[j].b]!=INT_MAX)
             if(dis[g[j].b] + g[j].w < dis[g[j].a])
             dis[g[j].a] = dis[g[j].b] + g[j].w;
             //for directed graph we only get one if condition.
