@@ -1,6 +1,7 @@
 /*
 The Floyd Warshall Algorithm is for solving the All Pairs Shortest Path problem. The problem is to find shortest distances between every pair of vertices
-in a given edge weighted directed Graph. Dijkstra finds the distance of all the nodes from a given source node. Understand the difference between both.
+in a given edge weighted directed/undirected Graph. Dijkstra finds the distance of all the nodes from a given source node. Understand the difference 
+between both.
 */
 
 #include<bits/stdc++.h>
@@ -27,6 +28,7 @@ int main()
     {
         cin>>a>>b>>w;
         dis[a][b]=w;
+        // dis[b][a]=w; this applies in case of undirected graph !!!
     }
     // NOTE :- The order of the loop is very important.Always middle man will be the first loop. !!!!!!!
     for(int k=1;k<=n;k++) //middle man 
