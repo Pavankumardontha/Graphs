@@ -3,6 +3,11 @@ Insertion in Priority queue O(logn)
 Deletion(popping) in Priority queue O(logn)
 Finding min/max in Priority Queue O(1).
 Time complexity :- O(V + E*log(E))
+Dijkstra finds the distance of all the nodes from a given source node in a graph.Dijkstra fails in 2 conditions
+a) Dijkstra’s algorithm never ends if the graph contains at least one negative cycle. By a negative cycle, we mean a cycle that has a negative total 
+weight for its edges.
+b) Dijkstra’s algorithm gives wrong results if some edge has negative weight.Dijkstra’s algorithm can reach an end if the graph contains negative edges, 
+but no negative cycles. So the execution of the algorithm will definitely end in case of negative edge weight but might give wrong results. 
  */
 
 #include<bits/stdc++.h>
