@@ -25,6 +25,12 @@
 7) Bipartite graph check
 8) Keys and rooms (leetcode)
 
+# Minimum spanning Tree 
+1) Redundant connection (leetcode)
+2) 
+
+
+
 # Dijkstra 
 1) No. of ways to arrive destination
 
