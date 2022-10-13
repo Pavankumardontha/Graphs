@@ -24,6 +24,7 @@
 6) Count connected components in a graph
 7) Bipartite graph check
 8) Keys and rooms (leetcode)
+9) Number of Provinces (leetcode)
 
 # Minimum spanning Tree 
 1) Redundant connection (leetcode)
