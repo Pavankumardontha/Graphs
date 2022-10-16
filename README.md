@@ -27,6 +27,9 @@
 8) Keys and rooms (leetcode)
 9) Number of Provinces (leetcode)
 
+# Bridges and Articulation points
+1) Submerging islands (SPOJ)
+
 # Minimum spanning Tree 
 1) Redundant connection (leetcode)
 2) 
