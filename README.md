@@ -10,7 +10,8 @@
 9) Kosaraju strongly connected components
 
 # BFS 
-1) Diameter of a Tree
+1) Rotten oranges (leetcode)
+1) Longest path in a Tree (diameter of a tree - SPOJ)
 2) Get watched videos by your friends (leetcode)
 3) Word ladder - 1 (leetcode)
 4) Word ladder - 2 (leetcode)
