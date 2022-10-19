@@ -59,3 +59,55 @@ public:
         return true;
     }
 };
+
+
+
+/* Bipartite graph with BFS */
+class Solution {
+public:
+    bool isBipartite(vector<vector<int>>& graph) 
+    {
+        /* Bipartite check with BFS */
+        int n = graph.size();
+        int color[n];
+        bool vis[n];
+        for(int i=0;i<n;i++)
+        {
+            color[i]=-1;
+            vis[i]=false;
+        }
+        queue<int> q;
+        for(int i=0;i<n;i++)
+        {
+            if(vis[i]==false)
+            {
+                vis[i]=true;
+                q.push(i);
+                color[i]=0;
+                while(!q.empty())
+                {
+                    int v = q.front();
+                    q.pop();
+                    for(int i=0;i<graph[v].size();i++)
+                    {
+                        int child = graph[v][i];
+                        if(vis[child])
+                        {
+                            if(color[child]==color[v])
+                                return false;
+                        }
+                        else
+                        {
+                            q.push(child);
+                            vis[child]=true;
+                            color[child] = !color[v];
+                        }
+                    }
+                }
+            }
+        }
+        return true;
+        
+    }
+};
+
