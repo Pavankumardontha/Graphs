@@ -12,9 +12,9 @@ void dfs(int v)
 
 
 //BFS
-queue<int> q;
 void bfs(int v)
 {
+    queue<int> q;
     q.push(v);
     vis[v]=1;
     while(!q.empty())
