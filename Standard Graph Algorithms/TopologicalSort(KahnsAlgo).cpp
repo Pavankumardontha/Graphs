@@ -58,6 +58,7 @@ int main()
 	{
 		cin>>x>>y;
 		arr[x].push_back(y);
+		// understand why we are doing arr[x].push_back(y) and not arr[y].push_back(x)
 		in[y]++;//here only we will increment the indegree of y.
 	}
 	
