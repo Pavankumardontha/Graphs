@@ -29,17 +29,16 @@ void kahn(int n)
 		//we will now move to the children of the temp and decrease their indegree count by 1,since its parent temp has been explored.
 		for(int i=0;i<arr[temp].size();i++)
 		{
-		      int child=arr[temp][i];
-			  in[child]--;
-			  if(in[child]==0)
-			  q.push(child);
-			   	
+		      	int child=arr[temp][i];
+			in[child]--;
+			if(in[child]==0)
+			q.push(child);   	
 		}
 		
 	}
 	
 	//printing the toposort
-    for(int i=0;i<res.size();i++)
+    	for(int i=0;i<res.size();i++)
 	cout<<res[i]<<" ";
 	cout<<endl;	
 	
