@@ -3,6 +3,7 @@
 using namespace std;
 /* A directed graph is strongly connected if there is a path between all pairs of vertices. A strongly connected component (SCC) of a directed graph is 
 a maximal strongly connected subgraph.
+This Algorithm is also used to find the loops and number of loops in the directed graph.
 */
 //kosaraju strongly connected components 
 vector<int> g[10001]; //graph
@@ -13,6 +14,7 @@ int n; //no of nodes
 int m; //no of edges
 void dfs(int v)
 {
+    // insert the node into into the stack only after visiting all its children
     vis[v]=true;
     for(int i=0;i<g[v].size();i++)
     {
