@@ -16,6 +16,7 @@
 3) Word ladder - 1 (leetcode)
 4) Word ladder - 2 (leetcode)
 5) Jump Game - 3 (leetcode)
+6) Jump Game - 4 (leetcode)
 
 # DFS
 1) No. of islands (leetcode)
