@@ -15,6 +15,7 @@
 2) Get watched videos by your friends (leetcode)
 3) Word ladder - 1 (leetcode)
 4) Word ladder - 2 (leetcode)
+5) Jump game - 2 (leetcode)
 5) Jump Game - 3 (leetcode)
 6) Jump Game - 4 (leetcode)
 
