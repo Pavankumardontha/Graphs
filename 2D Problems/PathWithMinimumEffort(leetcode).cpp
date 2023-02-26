@@ -33,6 +33,7 @@ public:
         }
 priority_queue<pair<int,pair<int,int>>,vector<pair<int,pair<int,int>>>,greater<pair<int,pair<int,int>>>> pq; 
         // priority queue first element should always be the distance and second element should be the node. A node can be 1D or 2D.
+        // since we want to control over the maximum distance between two consecutive nodes , we store that in place of distance.
         pq.push({0,{0,0}}); /*this is like the source point.!! (r-1,c-1) will be our destination point.*/
         while(!pq.empty())
         {
