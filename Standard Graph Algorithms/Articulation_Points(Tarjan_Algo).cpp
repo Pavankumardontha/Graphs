@@ -72,6 +72,8 @@ int main()
         g[i].clear();
         vis[i]=0;
         ap[i]=0;
+        low[i]=0;
+        in[i]=0;
     }
     int a,b;
     for(int i=0;i<m;i++)
