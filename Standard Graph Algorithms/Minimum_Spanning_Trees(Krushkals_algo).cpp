@@ -89,42 +89,42 @@ int main()
 	for(int i=1;i<=n;i++)
 	par[i]=-1;
 	/* initially all the nodes point to themselves and they are parents of themselves.*/
-    //we should now take the input of m edges
-    for(int i=0;i<m;i++)
-    cin>>g[i].a>>g[i].b>>g[i].w;
+    	//we should now take the input of m edges
+    	for(int i=0;i<m;i++)
+    	cin>>g[i].a>>g[i].b>>g[i].w;
     
-    //now we have to sort this edges based on weights.Remember this down step and note the difference between vector and array sorting
-    sort(g,g+m,comp); //this is array sorting.
+    	//now we have to sort this edges based on weights.Remember this down step and note the difference between vector and array sorting
+    	sort(g,g+m,comp); //this is array sorting.
     
-    int sum=0;//this stores the sum of all the weights in the minimum spanning tree.
-    for(int i=0;i<m;i++)
-    {
-     //we have m edges with us now.we have also sorted the edges depending on their weights.So now lets proceed.we will find
-     //the parents of the first edge.
-     /*we have 2 choices for each edge,whether it can be included or cannot be included.So we have only 2 sets here,the included set and 
-     the not included set.We can either include an edge or not include.*/
-     int k=find(g[i].a);
-     int l=find(g[i].b);
+    	int sum=0;//this stores the sum of all the weights in the minimum spanning tree.
+    	for(int i=0;i<m;i++)
+    	{
+     		//we have m edges with us now.we have also sorted the edges depending on their weights.So now lets proceed.we will find
+     		//the parents of the first edge.
+     		/*we have 2 choices for each edge,whether it can be included or cannot be included.So we have only 2 sets here,the included set and 
+     		the not included set.We can either include an edge or not include.*/
+     		int k=find(g[i].a);
+     		int l=find(g[i].b);
      
-     /*we have the parents of our edge (a,b) in (k,l)
-     if both of their parents are equal then they belong to the same set.If they belong to the same set,then their is 
-     always a path from 'a' to 'b' and thus we no need to add edge a,b into our Minimum spanning Tree edge-list. That
-	 means we do not add the weight of the edge (a,b) into our sum variable.Sum variable returns the sum of all the 
-	 edges considered in the Minimum spanning tree. If their parents are not same then they both do not belong to the same 
-	 set and there is no way to reach from 'a' to 'b' and hence we should add edge (a,b) into our minimum spanning tree 
-	 edge-list.*/
+     		/*we have the parents of our edge (a,b) in (k,l)
+     		if both of their parents are equal then they belong to the same set.If they belong to the same set,then their is 
+     		always a path from 'a' to 'b' and thus we no need to add edge a,b into our Minimum spanning Tree edge-list. That
+	 	means we do not add the weight of the edge (a,b) into our sum variable.Sum variable returns the sum of all the 
+	 	edges considered in the Minimum spanning tree. If their parents are not same then they both do not belong to the same 
+	 	set and there is no way to reach from 'a' to 'b' and hence we should add edge (a,b) into our minimum spanning tree 
+	 	edge-list.*/
 	 
-	 if(k!=l)//if both the node parents are different then we should add the edge into the Minimum spanning tree edge-list
-	 {
-	 	sum=sum+g[i].w;
-	 	merge(k,l); //NOT NOT NOT  merge(g[i].a,g[i].b)
-		/* here its very important to note that we are merging the parents of the nodes and NOT the nodes. Mergeing the parents is different than megering the nodes. 
-		Whenever we merge the parents, we are mergeing 2 large groups which have different parents by making their parents same. If parents of any 2 nodes are same 
-		then it means that we can reach one node via another through some path. If they are not reachable then their parents will be different. Reachable nodes have the 
-		same parents. !! 
-		*/
+	 	if(k!=l)//if both the node parents are different then we should add the edge into the Minimum spanning tree edge-list
+	 	{
+	 		sum=sum+g[i].w;
+	 		merge(k,l); //NOT NOT NOT  merge(g[i].a,g[i].b)
+			/* here its very important to note that we are merging the parents of the nodes and NOT the nodes. Mergeing the parents is different than megering the nodes. 
+			Whenever we merge the parents, we are mergeing 2 large groups which have different parents by making their parents same. If parents of any 2 nodes are same 
+			then it means that we can reach one node via another through some path. If they are not reachable then their parents will be different. Reachable nodes have the 
+			same parents. !! 
+			*/
 	 	
-	 }
+	 	}
 	}
 	cout<<sum<<endl;
 }
