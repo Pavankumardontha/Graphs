@@ -57,8 +57,9 @@ int par[100001];
 int find(int a)
 {
 	//this returns the parent of node a.
-	/*parent of node is that node itself if par[node] is -1.So if par[a]=-1 implies that parent of node is a itself.So initially,each node is 
-	a parent of itself since they are not added into any group and thats the reason they ae initialised with -1.*/
+	/*parent of node is that node itself if par[node] is -1.So if par[a]=-1 implies that parent of node is a itself.
+ 	So initially,each node is a parent of itself since they are not added into any group and thats the reason they 
+  	are initialised with -1.*/
 	if(par[a]<0)//checking if our current node is the parent or if it is pointing to any other node.If its pointing to -1,then its the parent
 	return a;
 	else
