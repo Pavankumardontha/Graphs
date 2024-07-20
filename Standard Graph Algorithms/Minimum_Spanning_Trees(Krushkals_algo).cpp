@@ -1,13 +1,14 @@
 /*Krushkals Algorithm for MST(coding in hacker-earth as well as geeksforgeeks) */
 
 /*
-Given a weighted undirected graph. Find the sum of weights of edges of a Minimum Spanning Tree.A minimum spanning tree (MST) or minimum weight spanning 
-tree is a subset of the edges of a connected, edge-weighted undirected graph that connects all the vertices together, without any cycles and with the 
-minimum possible total edge weight.
+Given a weighted undirected graph. Find the sum of weights of edges of a Minimum Spanning Tree.A minimum spanning tree (MST) 
+or minimum weight spanning tree is a subset of the edges of a connected, edge-weighted undirected graph that connects all 
+the vertices together, without any cycles and with the minimum possible total edge weight.
 
 Input:
-Given 2 integers N and M. N represents the number of vertices in the graph. M represents the number of edges between any 2 vertices.
-Then M lines follow, each line has 3 space separated integers  , ,  where  and  represents an edge from a vertex  to a vertex  and  respresents the weight of that edge.
+Given 2 integers N and M. N represents the number of vertices in the graph. M represents the number of edges between any 2 
+vertices.Then M lines follow, each line has 3 space separated integers  , ,  where  and  represents an edge from a vertex  
+to a vertex  and  respresents the weight of that edge.
 
 Output:
 Print the summation of edges weights in the MST.
