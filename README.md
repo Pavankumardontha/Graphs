@@ -32,7 +32,8 @@
 
 # DisJointSetUnion
 1) Minimal malware spread (leetcode)
-2) Checking Existence of Edge Length Limited Paths
+2) Checking Existence of Edge Length Limited Paths (leetcode)
+3) Number of operations to make network connected (leetcode)
 
 # Bridges and Articulation points
 1) Submerging islands (SPOJ)
