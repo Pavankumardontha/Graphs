@@ -34,6 +34,7 @@
 1) Minimal malware spread (leetcode)
 2) Checking Existence of Edge Length Limited Paths (leetcode)
 3) Number of operations to make network connected (leetcode)
+4) Remove Max Number of Edges to Keep Graph Fully Traversable (leetcode)
 
 # Bridges and Articulation points
 1) Submerging islands (SPOJ)
