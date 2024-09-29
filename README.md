@@ -30,6 +30,9 @@
 8) Keys and rooms (leetcode)
 9) Number of Provinces (leetcode)
 
+# DisJointSetUnion
+1) Minimal malware spread (leetcode)
+
 # Bridges and Articulation points
 1) Submerging islands (SPOJ)
 
