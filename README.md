@@ -36,6 +36,7 @@
 3) Number of operations to make network connected (leetcode)
 4) Remove Max Number of Edges to Keep Graph Fully Traversable (leetcode)
 5) Satisfiablity of equality equations (leetcode)
+6) Lexicographically smallest equivalent string (leetcode)
 
 # Bridges and Articulation points
 1) Submerging islands (SPOJ)
