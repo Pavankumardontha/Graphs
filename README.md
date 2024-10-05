@@ -38,6 +38,10 @@
 5) Satisfiablity of equality equations (leetcode)
 6) Lexicographically smallest equivalent string (leetcode)
 
+# TopologicalSort
+1) course schedule (leetcode)
+2) 
+
 # Bridges and Articulation points
 1) Submerging islands (SPOJ)
 
