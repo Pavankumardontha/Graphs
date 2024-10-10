@@ -26,7 +26,7 @@
 4) No. of paths between source and destination nodes (+ backtracking)
 5) Shortest/Largest path between source and destion node (+ backtracking)
 6) Count connected components in a graph
-7) Bipartite graph check
+7) Bipartite graph check ( leetcode )
 8) Keys and rooms (leetcode)
 9) Number of Provinces (leetcode)
 
