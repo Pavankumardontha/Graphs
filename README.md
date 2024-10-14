@@ -18,6 +18,7 @@
 5) Jump game - 2 (leetcode)
 5) Jump Game - 3 (leetcode)
 6) Jump Game - 4 (leetcode)
+7) Pacific Atlantic water flow (leetcode - using BFS)
 
 # DFS
 1) No. of islands (leetcode)
@@ -29,6 +30,7 @@
 7) Bipartite graph check ( leetcode )
 8) Keys and rooms (leetcode)
 9) Number of Provinces (leetcode)
+10) Pacific Atlantic water flow (leetcode - using DFS)
 
 # DisJointSetUnion
 1) Minimal malware spread (leetcode)
