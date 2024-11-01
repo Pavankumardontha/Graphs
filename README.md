@@ -34,6 +34,7 @@
 10) Pacific Atlantic water flow (leetcode - using DFS)
 11) All Paths From Source to Target (leetcode)
 12) Longest increasing path in a matrix (leetcode)
+13) Longest Path With Different Adjacent Characters (leetcode)
 
 # DisJointSetUnion
 1) Minimal malware spread (leetcode)
