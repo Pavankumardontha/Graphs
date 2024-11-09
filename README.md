@@ -61,6 +61,7 @@
 
 # Dijkstra 
 1) No. of ways to arrive destination
+2) Path with maximum probability
 
 # Problem Set
 1) Non-directed graph cycle detection
