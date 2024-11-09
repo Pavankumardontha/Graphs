@@ -48,6 +48,7 @@
 1) course schedule (leetcode)
 2) course schedule-2 (leetcode)
 3) Alien dictionary (gfg)
+4) Find eventual safe states (leetcode)
 
 # Bridges and Articulation points
 1) Submerging islands (SPOJ)
