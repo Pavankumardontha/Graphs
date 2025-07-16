@@ -38,7 +38,7 @@
 13) Longest Path With Different Adjacent Characters (leetcode)
 
 # DisJointSetUnion
-1) Minimal malware spread (leetcode -  can be done using both BFS and DSU)
+1) Minimize malware spread (leetcode -  can be done using both BFS and DSU)
 2) Checking Existence of Edge Length Limited Paths (leetcode)
 3) Number of operations to make network connected (leetcode)
 4) Remove Max Number of Edges to Keep Graph Fully Traversable (leetcode)
