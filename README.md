@@ -40,12 +40,14 @@
 # DisJointSetUnion
 1) Minimize malware spread (leetcode -  can be done using both BFS and DSU)
 2) Minimum score of a path between cities
-3) Redundant connection 
-4) Checking Existence of Edge Length Limited Paths (leetcode)
-5) Number of operations to make network connected (leetcode)
-6) Remove Max Number of Edges to Keep Graph Fully Traversable (leetcode)
-7) Satisfiablity of equality equations (leetcode)
-8) Lexicographically smallest equivalent string (leetcode)
+3) Redundant connection
+4) Power Grid maintenance
+5) Path Existence Queries in a Graph I
+6) Checking Existence of Edge Length Limited Paths (leetcode)
+7) Number of operations to make network connected (leetcode)
+8) Remove Max Number of Edges to Keep Graph Fully Traversable (leetcode)
+9) Satisfiablity of equality equations (leetcode)
+10) Lexicographically smallest equivalent string (leetcode)
 
 # TopologicalSort
 1) course schedule (leetcode)
