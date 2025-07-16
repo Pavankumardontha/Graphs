@@ -58,7 +58,7 @@ public:
         for(int i=0;i<q;i++)
         queries[i].push_back(i);
         sort(queries.begin(),queries.end(),Querycomp);
-        int last_added_edge_index = -1;
+        int last_added_edge_index = -1; // index of the last added edge into MST
         vector<bool> ans(q,false);
         int limit;
         int a,b,distance;
