@@ -83,5 +83,6 @@
 7) Rotten Oranges(Important model) ----------> BFS problem
 8) Swim In Rising Water ---------> Dijshiktra 
 9) Path with minimum effort------>Dijshiktra
+10) Number of Increasing Paths in a Grid (very very important)
 
 Note the difference between the above 2 and understand where DFS is used and where BFS is used. Understand where to use Priority queue(Dijshiktra) and where to use simple queue(BFS) for a problem. This is very very important !!!
