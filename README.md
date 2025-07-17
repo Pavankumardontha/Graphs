@@ -37,7 +37,7 @@
 12) Longest increasing path in a matrix (leetcode)
 13) Longest Path With Different Adjacent Characters (leetcode)
 
-# DisJointSetUnion
+# DisJointSetUnion (Minimum spanning tree)
 1) Minimize malware spread (leetcode -  can be done using both BFS and DSU)
 2) Minimum score of a path between cities
 3) Redundant connection
@@ -53,17 +53,14 @@
 13) Lexicographically smallest equivalent string (leetcode)
 
 # TopologicalSort
-1) course schedule (leetcode)
-2) course schedule-2 (leetcode)
+1) course schedule 
+2) course schedule-2
 3) Alien dictionary (gfg)
-4) Find eventual safe states (leetcode)
+4) Find eventual safe states
+5) Minimum height trees
 
 # Bridges and Articulation points
 1) Submerging islands (SPOJ)
-
-# Minimum spanning Tree 
-1) Redundant connection (leetcode)
-2) 
 
 
 
