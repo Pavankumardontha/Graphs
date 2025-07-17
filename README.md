@@ -41,15 +41,16 @@
 1) Minimize malware spread (leetcode -  can be done using both BFS and DSU)
 2) Minimum score of a path between cities
 3) Redundant connection
-4) Power Grid maintenance
-5) Properties graph
-6) Minimum Time for K Connected Components
-7) Path Existence Queries in a Graph I
-8) Checking Existence of Edge Length Limited Paths (leetcode)
-9) Number of operations to make network connected (leetcode)
-10) Remove Max Number of Edges to Keep Graph Fully Traversable (leetcode)
-11) Satisfiablity of equality equations (leetcode)
-12) Lexicographically smallest equivalent string (leetcode)
+4) Redundant connection - II
+5) Power Grid maintenance
+6) Properties graph
+7) Minimum Time for K Connected Components
+8) Path Existence Queries in a Graph I
+9) Checking Existence of Edge Length Limited Paths (leetcode)
+10) Number of operations to make network connected (leetcode)
+11) Remove Max Number of Edges to Keep Graph Fully Traversable (leetcode)
+12) Satisfiablity of equality equations (leetcode)
+13) Lexicographically smallest equivalent string (leetcode)
 
 # TopologicalSort
 1) course schedule (leetcode)
