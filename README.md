@@ -58,7 +58,8 @@
 2) course schedule-2
 3) Alien dictionary (gfg)
 4) Find eventual safe states
-5) Minimum height trees
+5) Find All Possible Recipes from Given Supplies
+6) Minimum height trees
 
 # Bridges and Articulation points
 1) Submerging islands (SPOJ)
