@@ -21,6 +21,7 @@
 7) Pacific Atlantic water flow (leetcode - using BFS)
 8) Pacific Atlantic water flow (leetcode - using DFS very very important)
 9) Most Stones Removed with Same Row or Column
+10) longest cycle in a graph (can be done using both DFS and BFS)
 
 # DFS
 1) No. of islands (leetcode)
