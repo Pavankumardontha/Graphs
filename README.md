@@ -59,9 +59,10 @@
 2) course schedule-2
 3) Alien dictionary (gfg)
 4) Find eventual safe states
-5) Find All Possible Recipes from Given Supplies
-6) Sort Items by Groups Respecting Dependencies
-7) Minimum height trees
+5) Parallel Courses III
+6) Find All Possible Recipes from Given Supplies
+7) Sort Items by Groups Respecting Dependencies
+8) Minimum height trees
 
 # Bridges and Articulation points
 1) Submerging islands (SPOJ)
@@ -90,3 +91,9 @@
 10) Number of Increasing Paths in a Grid (very very important)
 
 Note the difference between the above 2 and understand where DFS is used and where BFS is used. Understand where to use Priority queue(Dijshiktra) and where to use simple queue(BFS) for a problem. This is very very important !!!
+
+# Missed problems
+1) collect coins in a tree
+2) 
+
+
