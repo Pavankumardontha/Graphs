@@ -72,7 +72,8 @@
 # Dijkstra 
 1) Path with maximum probability
 2) Network delay time
-4) No. of ways to arrive destination
+3) No. of ways to arrive destination
+4) Shortest Path in Binary Matrix (understand why DFS + DP does not work in cases where we can move in all 8 directions)
 
 # Problem Set
 1) Non-directed graph cycle detection
