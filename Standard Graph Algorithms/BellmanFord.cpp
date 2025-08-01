@@ -19,15 +19,17 @@ The Floyd Warshall Algorithm is for solving the All Pairs Shortest Path problem.
 distances between every pair of verticesin a given edge weighted directed/undirected Graph. 
 ----------------
 Dijkstra finds the distance of all the nodes from a given source node in a graph.Dijkstra fails in 2 conditions
-a) Dijkstra’s algorithm never ends if the graph contains at least one negative cycle. By a negative cycle, we mean 
+a) Dijkstra’s algorithm never ends if the graph contains at least one negative cycle. By a negative cycle, we 
+mean 
 a cycle that has a negative total weight for its edges.
-b) Dijkstra’s algorithm gives wrong results if some edge has negative weight.Dijkstra’s algorithm can reach an end 
-if the graph contains negative edges, but no negative cycles. So the execution of the algorithm will definitely end 
-in case of negative edge weight but might give wrong results. 
+b) Dijkstra’s algorithm gives wrong results if some edge has negative weight.Dijkstra’s algorithm can reach an
+end if the graph contains negative edges, but no negative cycles. So the execution of the algorithm will 
+definitely end in case of negative edge weight but might give wrong results. 
 ----------------
-Bellmanford Algorithm is also used to find the distance of all the nodes from a given source node in a graph.Bellman Ford’s Algorithm works when there 
-is negative weight edge, it also detects the negative weight cycle.Dijkstra’s Algorithm may or may not work when there is negative weight edge. 
-But will definitely not work when there is a negative weight cycle.
+Bellmanford Algorithm is also used to find the distance of all the nodes from a given source node in a graph.
+Bellman Ford’s Algorithm works when there is negative weight edge, it also detects the negative weight cycle.
+Dijkstra’s Algorithm may or may not work when there is negative weight edge. But will definitely not work when 
+there is a negative weight cycle.
 ----------------
 Understand the difference between all 3 algorithms.
 */
